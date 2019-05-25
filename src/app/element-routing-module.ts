@@ -1,11 +1,9 @@
 import { MultiLocationStrategy } from './multi-location-strategy';
-import { MockLocationStrategy, SpyLocation } from '@angular/common/testing';
 import { NgModule, NgModuleFactoryLoader, Compiler, Injector, Optional, ModuleWithProviders, SystemJsNgModuleLoader } from '@angular/core';
-import { RouterTestingModule, SpyNgModuleFactoryLoader } from '@angular/router/testing';
 import { RouterModule, Router, UrlSerializer, ChildrenOutletContexts, ROUTES, ROUTER_CONFIGURATION,
      UrlHandlingStrategy, PreloadingStrategy, NoPreloading, provideRoutes, Routes, ExtraOptions, Route } from '@angular/router';
 import { ɵROUTER_PROVIDERS as ROUTER_PROVIDERS } from '@angular/router';
-import { LocationStrategy, Location, HashLocationStrategy, PathLocationStrategy } from '@angular/common';
+import { LocationStrategy, Location} from '@angular/common';
 import { flatten } from '@angular/compiler';
 
 export function setupElementsRouter(urlSerializer: UrlSerializer, contexts: ChildrenOutletContexts, location: Location,
