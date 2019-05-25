@@ -1,0 +1,12 @@
+.element-container {
+    padding: 1rem;
+    border-radius: 4px;
+    width: 500px;
+    margin: 2rem;
+    background-color: white;
+
+    &__headline {
+        border-bottom: 1px solid #333333;
+        padding-bottom: 0.5rem;
+    }
+}

@@ -7,7 +7,7 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "app",
+      "prefix": "",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
@@ -22,6 +22,10 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
+            "lazyModules": [
+              "src/app/web-components/element-a/element-a.module",
+              "src/app/web-components/element-b/element-b.module"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
