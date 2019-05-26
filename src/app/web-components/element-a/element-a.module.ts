@@ -18,8 +18,8 @@ import { PictureComponent } from './components/picture/picture.component';
 export class ElementAModule {
 
   constructor(private injector: Injector) {
-    const customButton = createCustomElement(ElementAComponent, { injector });
-    customElements.define('element-a', customButton);
+    const elementA = createCustomElement(ElementAComponent, { injector });
+    customElements.define('element-a', elementA);
   }
 
   ngDoBootstrap() {}
